@@ -24,7 +24,7 @@ API.
 You can build and run the Client with:
 
 ```
-npm start
+npm run start:prod
 ```
 
 ## Scaling

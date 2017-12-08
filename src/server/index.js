@@ -1,5 +1,5 @@
 /*
-*  Modified index.js from universal-demo to work with Stephen Grider's react-ssr api
+*  Modified index.js from universal-demo
 *  author: faceyspacey
 *  repository: https://github.com/faceyspacey/universal-demo 
 *  license: MIT

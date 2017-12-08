@@ -13,7 +13,7 @@ You'll need a mongo database to store your users etc. You can find instructions
 to download it for windows/mac/linux at
 <a href="http://www.mongodb.com">mongodb.com</a> . If you don't want to install
 it on your local machine, you may opt to use a service such as
-<a href="www.mlab.com"> mlab.com</a>. You'll need to create a mongo user and
+<a href="http://www.mlab.com"> mlab.com</a>. You'll need to create a mongo user and
 database, then place your mongo URI into the API configuration file.
 
 edit <strong>./API/config/dev.js</strong> with your mongo credentials

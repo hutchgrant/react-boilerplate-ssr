@@ -1,14 +1,14 @@
 {
 	"name": "react-boilerplate-api",
 	"version": "1.0.0",
-	"description": "",
+	"description": "React Boilerplate API",
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
 		"dev": "nodemon index.js"
 	},
-	"author": "",
-	"license": "ISC",
+	"author": "Grant Hutchinson(HutchGrant)",
+	"license": "MIT",
 	"dependencies": {
 		"bcrypt-nodejs": "0.0.3",
 		"bluebird": "^3.5.1",

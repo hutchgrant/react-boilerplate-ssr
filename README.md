@@ -3,10 +3,10 @@
 React Boilerplate Server Side Rendering with authentication, code-splitting,
 Sass, Bootstrap, administration dashboard
 
-<a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/screenshots/screen_home.png"><img src="./docs/screenshots/screen_home.png" width="280px"></a>
-<a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/screenshots/screen_login.png"><img src="./docs/screenshots/screen_login.png" width="280px"></a>
-<a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/screenshots/screen_register.png"><img src="./docs/screenshots/screen_register.png" width="280px"></a>
-<a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/screenshots/screen_admin.png"><img src="./docs/screenshots/screen_admin.png" width="280px"></a>
+<a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/docs/screenshots/screen_home.png"><img src="./docs/screenshots/screen_home.png" width="280px"></a>
+<a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/docs/screenshots/screen_login.png"><img src="./docs/screenshots/screen_login.png" width="280px"></a>
+<a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/docs/screenshots/screen_register.png"><img src="./docs/screenshots/screen_register.png" width="280px"></a>
+<a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/docs/screenshots/screen_admin.png"><img src="./docs/screenshots/screen_admin.png" width="280px"></a>
 
 ## Installation
 
@@ -46,7 +46,7 @@ documentation</a>.
 ## License
 
 React Boilerplate SSR is available under the
-[MIT License](https://github.com/hutchgrant/react-boilerplate/blob/master/LICENSE).
+[MIT License](https://github.com/hutchgrant/react-boilerplate-ssr/blob/master/LICENSE).
 
 ## Contributing
 
