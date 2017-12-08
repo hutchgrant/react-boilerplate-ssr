@@ -1,0 +1,86 @@
+@import 'variables';
+@import 'colors';
+@import 'mixins';
+@import 'admin-navigation';
+@import 'sidebar';
+
+.dashboard {
+	height: 100%;
+	color: $color-text-admin;
+	background: rgba(73, 155, 234, 1);
+	background: -moz-linear-gradient(
+		top,
+		rgba(73, 155, 234, 1) 0%,
+		rgba(32, 124, 229, 1) 100%
+	);
+	background: -webkit-gradient(
+		left top,
+		left bottom,
+		color-stop(0%, rgba(73, 155, 234, 1)),
+		color-stop(100%, rgba(32, 124, 229, 1))
+	);
+	background: -webkit-linear-gradient(
+		top,
+		rgba(73, 155, 234, 1) 0%,
+		rgba(32, 124, 229, 1) 100%
+	);
+	background: -o-linear-gradient(
+		top,
+		rgba(73, 155, 234, 1) 0%,
+		rgba(32, 124, 229, 1) 100%
+	);
+	background: -ms-linear-gradient(
+		top,
+		rgba(73, 155, 234, 1) 0%,
+		rgba(32, 124, 229, 1) 100%
+	);
+	background: linear-gradient(
+		to bottom,
+		rgba(73, 155, 234, 1) 0%,
+		rgba(32, 124, 229, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#499bea',
+			endColorstr='#207ce5',
+			GradientType=0
+		);
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: radial-gradient(black 2%, transparent 13%) 0 0,
+			radial-gradient(black 2%, transparent 2%) 8px 8px,
+			radial-gradient(rgba(255, 255, 255, 0.1) 5%, transparent 5%) 0 1px,
+			radial-gradient(rgba(255, 255, 255, 0.1) 5%, transparent 5%) 8px 9px;
+		background-size: 7px 7px;
+	}
+}
+
+.adminContainer {
+	background-color: rgba(64, 96, 130, 0.52);
+	border: 1px solid rgb(48, 100, 154);
+	padding: 20px;
+	padding-top: 5px;
+	border-radius: 10px;
+	.sortableInputToggle {
+		cursor: pointer;
+		color: white;
+		font-weight: 600;
+		float: left;
+		margin-top: 5px;
+		margin-bottom: 16px;
+		&:hover {
+			font-weight: 800;
+			text-decoration: none;
+		}
+	}
+}
+
+/* Menus */
+.menuOptions {
+	background-color: blue;
+}

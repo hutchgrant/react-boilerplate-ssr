@@ -1,0 +1,32 @@
+// Footer
+@import 'colors';
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top: 4px solid #c0392b;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #2b2d2f;
+	color: #62676d;
+
+	a {
+		color: $color-highlight;
+		&:visited {
+			color: $color-highlight;
+		}
+		&:hover {
+			color: $color-navtexthover;
+		}
+	}
+	p {
+		font-size: '16px';
+		margin-bottom: 0;
+	}
+}
+
+.footer-tertiary {
+	background-color: #202123;
+	color: #565656;
+}

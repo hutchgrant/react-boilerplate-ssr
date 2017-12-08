@@ -1,0 +1,77 @@
+@import 'Navigation';
+
+.navbar-admin {
+	background-color: $color-nav-admin !important;
+	@extend .navbar-default;
+	.navbar-nav {
+		background-color: transparent;
+		> li > a,
+		.open > a {
+			color: $color-navtext-admin;
+			&:hover,
+			&:active,
+			&:focus {
+				color: $color-navtext-admin;
+				background-color: $color-dark-admin;
+			}
+		}
+		.open {
+			> a {
+				background-color: $color-dark-admin;
+			}
+			.dropdown-menu > li > a {
+				color: $color-light-admin;
+			}
+		}
+	}
+	@media (max-width: $screen-sm) {
+		.navbar-nav > li > a {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
+	@media (max-width: $screen-xs) {
+		.navbar-header {
+			float: left;
+		}
+		.navbar-right {
+			float: right;
+		}
+		.navbar-nav .open .dropdown-menu {
+			right: 0;
+			left: auto;
+		}
+		.navbar-nav .open .dropdown-menu {
+			position: absolute;
+			float: none;
+			width: auto;
+			margin-top: 0;
+			background-color: white;
+			border: 1px solid #ccc;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+		.adminUserTag {
+			display: none;
+		}
+	}
+}
+
+.navbar-admin-toggle {
+	float: left;
+	margin-left: 5px;
+	@extend .navbar-toggle;
+	.icon-bar {
+		background-color: $color-base-admin !important;
+		margin-top: 4px;
+		&:nth-child(2) {
+			margin-top: 0px;
+		}
+	}
+	@media (max-width: $screen-xs) {
+		margin-top: 8px;
+	}
+	@media (min-width: $screen-xs) {
+		display: none;
+	}
+}

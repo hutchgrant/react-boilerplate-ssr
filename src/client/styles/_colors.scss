@@ -1,0 +1,48 @@
+// Client colors
+$color-base: #b43636;	// Main Primary color */
+$color-highlight: #bb4545;
+$color-secondary: red;
+$color-dark: #611e1e;
+$color-darkest: black;
+
+// Admin colors
+$color-base-admin: black;
+$color-light-admin: #3c91e8;
+$color-dark-admin: #464646;
+$color-secondary-admin: #c62828;
+$color-sec-light-admin: #ff5f52;
+$color-sec-dark-admin: #8e0000;
+$color-text-admin: white;
+
+// Navigation 
+$color-nav: $color-base;
+$color-navborder: $color-darkest;
+$color-navtext: white;
+$color-navhover: white;
+$color-navtexthover:white;
+$color-navactive: white;
+$color-navvisited: white;
+$color-navopen:transparent;
+$color-navopentext:white;
+
+// Admin Navigation
+$color-nav-admin: black;
+$color-navborder-admin: $color-dark-admin;
+$color-navtext-admin: white;
+$color-navhover-admin: white;
+$color-navtexthover-admin:white;
+$color-navactive-admin: white;
+$color-navvisited-admin: white;
+$color-navopen-admin:transparent;
+$color-navopentext-admin:white;
+
+// Sidebar
+$color-sb-background:transparent;
+$color-sb-text-main:white;
+$color-sb-text-main-hover:$color-light-admin;
+$color-sb-text-main-active:$color-dark-admin;
+$color-sb-bg-hover: transparent;
+$color-sb-drop: transparent;
+$color-sb-text-drop:white;
+$color-sb-text-drop-hover:$color-light-admin;
+$color-sb-text-drop-active:$color-dark-admin;

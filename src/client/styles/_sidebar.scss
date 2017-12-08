@@ -1,0 +1,180 @@
+@import 'variables';
+@import 'colors';
+@import 'mixins';
+/* remove outer padding */
+.main .row {
+	padding: 0px;
+	margin: 0px;
+}
+
+.sidebar {
+	@media (min-width: $screen-xs) {
+		float: left;
+	}
+	@media (max-width: 1460px) {
+		width: 50px;
+	}
+	@media (max-width: $screen-xs) {
+		width: 100%;
+	}
+	/* Remove header */
+	.navbar {
+		min-height: 0px;
+		border: 0px;
+	}
+}
+
+nav.sidebar,
+.main {
+	-webkit-transition: margin 200ms ease-out;
+	-moz-transition: margin 200ms ease-out;
+	-o-transition: margin 200ms ease-out;
+	transition: margin 200ms ease-out;
+}
+
+/* Add gap to nav and right windows.*/
+.main {
+	margin-left: 50px;
+	margin-right: 0;
+	width: calc(100% - 50px); /*keeps 100% minus nav size*/
+	padding: 10px 10px 0 10px;
+	position: absolute;
+	/*small/medium side display*/
+	@media (min-width: $screen-xs) {
+		/*Allow main to be next to Nav*/
+		width: calc(100% - 40px); /*keeps 100% minus nav size*/
+		margin-left: 40px;
+		&:hover + .main {
+			margin-left: 200px;
+		}
+	}
+	@media (max-width: $screen-xs) {
+		width: calc(100% - 40px);
+		margin-left: 0px;
+		.collapse > .navbar-nav {
+			margin: 0px -15px;
+			background-color: rgba(0, 0, 0, 0.75);
+		}
+	}
+}
+/* Set the mobile sidebar drop down */
+@media (max-width: $screen-xs) {
+	.navbar-nav {
+		margin: 0px -15px;
+		background-color: rgba(0, 0, 0, 0.75);
+	}
+}
+/* .....NavBar: Icon only with coloring/layout.....*/
+@media (min-width: $screen-xs) {
+	nav.sidebar {
+		/*gives sidebar width/height*/
+		width: 200px;
+		height: 100%;
+		margin-left: -160px;
+		float: left;
+		z-index: 8000;
+		margin-bottom: 0px;
+		background-color: rgba(0, 0, 0, 0.45);
+		/*Remove rounded coners*/
+		border-radius: 0px;
+		.navbar {
+			/*Remove rounded coners*/
+			border-radius: 0px;
+			/*Center Brand*/
+			> .container .navbar-brand,
+			.navbar > .container-fluid .navbar-brand {
+				margin-left: 0px;
+			}
+		}
+		/*Center Brand*/
+		.navbar-brand,
+		nav.sidebar .navbar-header {
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+		/*Center Icons*/
+		a {
+			padding-right: 13px;
+		}
+		/* Gives sidebar 100% width */
+		li {
+			width: 100%;
+		}
+		/* Move nav to full on mouse over*/
+		&:hover {
+			margin-left: 0px;
+		}
+		/*for hidden things when navbar hidden*/
+		.forAnimate {
+			opacity: 0;
+		}
+
+		.navbar-nav {
+			> li {
+				/*adds border to bottom nav boxes*/
+				/* border-bottom: 1px #e5e5e5 solid; */
+				/*adds border top to first nav box */
+				&:first-child {
+					/*	border-top: 1px #e5e5e5 solid; */
+				}
+			}
+			/* Colors/style dropdown box*/
+			.open .dropdown-menu {
+				position: static;
+				float: none;
+				width: auto;
+				margin-top: 0;
+				background-color: transparent;
+				border: 0;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+		}
+		/*allows nav box to use 100% width*/
+		.navbar-collapse,
+		.container-fluid {
+			padding: 0 0px 0 0px;
+		}
+		/*colors dropdown box text */
+		.navbar-sidebar .navbar-nav .open .dropdown-menu > li > a {
+			color: #777;
+		}
+	}
+}
+
+@media (min-width: 1330px) {
+	nav.sidebar {
+		margin-left: 0px;
+		float: left;
+		background-color: rgba(0, 0, 0, 0.45);
+	}
+	/*Allow main to be next to Nav*/
+	.main {
+		width: calc(100% - 200px); /*keeps 100% minus nav size*/
+		margin-left: 200px;
+	}
+	/*Show hidden items on nav*/
+	.forAnimate {
+		opacity: 1;
+	}
+}
+
+.navbar-sidebar {
+	li a,
+	li > li a {
+		@include anchor-item($color-sb-text-main, $color-sb-background, $color-sb-text-main-hover, $color-sb-bg-hover,
+			$color-sb-text-main-active, $color-sb-bg-hover, $color-sb-text-main-hover,  $color-sb-bg-hover);
+	}
+	.nav .open a,
+	.nav .open .dropdown-menu > li > a {
+		@include anchor-item($color-sb-text-drop, $color-sb-drop, $color-sb-text-drop-hover, $color-sb-bg-hover,
+			$color-sb-text-drop-active, $color-sb-bg-hover, $color-sb-text-drop-hover,  $color-sb-bg-hover);
+	}
+}
+nav:hover .forAnimate {
+	opacity: 1;
+}
+section {
+	padding-left: 15px;
+}

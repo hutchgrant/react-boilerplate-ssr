@@ -1,0 +1,182 @@
+@import 'variables';
+@import 'colors';
+
+// Navigation
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	background-color: $color-nav;
+	border-color: $color-navborder;
+	@media (min-width: $screen-sm) {
+		border-radius: 0px;
+	}
+	.navbar-brand {
+		font-size: 18px;
+		color: $color-navtext;
+		&:hover {
+			color: $color-navhover;
+		}
+		&:active {
+			color: $color-navactive;
+		}
+
+		&:visited {
+			color: $color-navactive;
+		}
+		img {
+			padding-top: 0px;
+			margin-right: 10px;
+			margin-top: -5px;
+			display: inline;
+			width: 30px;
+		}
+	}
+	.navbar-nav {
+		margin: 0px -15px;
+		@media (max-width: $screen-xs) {
+			background-color: white;
+		}
+		.open {
+			.dropdown-menu {
+				> li > a {
+					color: $color-base;
+					background-color: white;
+					&:hover {
+						font-weight: 600;
+					}
+				}
+			}
+			a {
+				color: $color-base;
+				background-color: white;
+				&:focus,
+				&:hover {
+					color: $color-base;
+					background-color: white;
+				}
+				@media (max-width: $screen-sm) {
+					color: $color-base;
+					background-color: $color-navhover;
+					&:hover {
+						color: $color-base;
+						background-color: $color-navhover;
+					}
+				}
+			}
+		}
+
+		> li > a {
+			color: $color-navtext;
+			&:hover {
+				color: $color-base;
+				background-color: $color-navhover;
+			}
+			&:active {
+				color: $color-navactive;
+			}
+			&:focus {
+				text-decoration: none;
+				background-color: transparent;
+			}
+			@media (max-width: $screen-sm) {
+				padding-top: 20px;
+			}
+			@media (max-width: 550px) {
+				padding-top: 20px;
+				font-size: 18px;
+			}
+			@media (max-width: 400px) {
+				padding-top: 15px;
+				font-size: 16px;
+			}
+			@media (max-width: $screen-xs) {
+				color: $color-base;
+				&:focus {
+					color: $color-base;
+					background-color: $color-navhover;
+				}
+				&:hover {
+					font-weight: 600;
+					color: $color-base;
+					background-color: $color-navhover;
+				}
+			}
+		}
+	}
+}
+.nav {
+	color: white;
+	font-size: 16px;
+	> .open {
+		a {
+			color: $color-navopentext;
+			background-color: $color-navopen;
+			text-shadow: 1px 1px rgba(0, 0, 0, 0.16);
+			&:hover {
+				color: white;
+				background-color: black;
+			}
+			&:focus {
+				color: $color-navtexthover;
+				background-color: $color-navopen;
+			}
+		}
+	}
+}
+
+.navbar-right {
+	background-color: transparent;
+}
+
+.navbar-collapse {
+	z-index: 100;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: none;
+	// @media(max-width: $screen-sm){
+	//     left: 15px;
+	//     position: absolute;
+	//     width: 100%;
+	// }
+}
+
+.navbar-toggle {
+	position: relative;
+	float: right;
+	margin-right: 15px;
+	padding: 9px 10px;
+	background-color: white;
+	background-image: none;
+	border: 1px solid white !important;
+	border-radius: 4px;
+	@media (max-width: 550px) {
+		margin-top: 8px;
+	}
+	@media (max-width: 400px) {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	&:hover {
+		background-color: white;
+	}
+	&:visited {
+		background-color: white;
+	}
+	.icon-bar {
+		display: block;
+		width: 22px;
+		height: 3px;
+		border-radius: 1px;
+		background-color: $color-nav !important;
+		@media (max-width: 400px) {
+			height: 2px;
+			width: 21px;
+		}
+	}
+}
+
+.dropdown-menu {
+	background-color: white;
+}

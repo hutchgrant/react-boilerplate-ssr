@@ -1,0 +1,16 @@
+@mixin anchor-item($defaultText, $defaultBg, $hoverText, $hoverBg, $activeText, $activeBg, $focusText, $focusBg) {
+	color: $defaultText;
+	background-color: $defaultBg;
+	&:hover {
+		color: $hoverText;
+		background-color: $hoverBg;
+	}
+	&:active {
+		color: $activeText;
+		background-color: $activeBg;
+	}
+	&:focus {
+		color: $focusText;
+		background-color: $focusBg;
+	}
+}
