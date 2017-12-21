@@ -1,7 +1,7 @@
 # React Boilerplate SSR
 
 React Boilerplate Server Side Rendering with authentication, code-splitting,
-Sass, Bootstrap, administration dashboard
+Sass, Bootstrap, administration dashboard. 
 
 <a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/docs/screenshots/screen_home.png"><img src="./docs/screenshots/screen_home.png" width="280px"></a>
 <a href="https://github.com/hutchgrant/react-boilerplate-ssr/raw/master/docs/screenshots/screen_login.png"><img src="./docs/screenshots/screen_login.png" width="280px"></a>
@@ -39,9 +39,13 @@ with monitors and hot loading.
 
 ## Production
 
-For information about running this software in a development environment, see
+For information about running this software in a production environment, see
 <a href="https://github.com/hutchgrant/react-boilerplate-ssr/blob/master/docs/README_PROD.md">production
 documentation</a>.
+
+## Client-side rendering
+
+If you would prefer to use client-side rendering, the original project is available [here](https://github.com/hutchgrant/react-boilerplate)
 
 ## License
 

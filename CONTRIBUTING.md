@@ -1,4 +1,4 @@
-##Contributing
+## Contributing
 
 Contributions are encouraged, while it must be noted, this project has a planned
 path and you should seek to contact the authors before undergoing any large

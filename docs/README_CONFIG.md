@@ -36,7 +36,7 @@ API is on port 5000 and the application(redirectDomain) is on port 3000 of the
 localhost. It's setup this way so you can scale the API or the application
 renderer seperately.
 
-edit <strong>./API/config/dev.js</strong> with your mongo credentials
+edit <strong>./API/config/dev.js</strong> with your API credentials
 
 ```
 cookieKey: 'RABID_HONEY_BADGER',
@@ -49,7 +49,7 @@ apiDomain: 'http://localhost:5000'
 
 Register a new site with [invisible recaptcha](https://www.google.com/recaptcha)
 
-edit <strong>./API/config/dev.js</strong> with your mongo credentials
+edit <strong>./API/config/dev.js</strong> with your google recaptcha credentials
 
 ```
 googleRecaptchaSecret: 'YOUR_SERVER_SECRET_KEY',
@@ -74,7 +74,7 @@ Set Authorised JavaScript origins: http://localhost:5000
 
 Set Authorised redirect URIs: http://localhost:5000/auth/google/callback
 
-edit <strong>./API/config/dev.js</strong> with your mongo credentials
+edit <strong>./API/config/dev.js</strong> with your google+ credentials
 
 ```
 googleClientId: 'YOUR_GOOGLE_CLIENT_ID',
@@ -87,7 +87,7 @@ You'll need developer API credentials for
 [Facebook](https://developers.facebook.com/). Create an application, add
 facebook SignIn.
 
-edit <strong>./API/config/dev.js</strong> with your mongo credentials
+edit <strong>./API/config/dev.js</strong> with your facebook credentials
 
 ```
 facebookClientId: 'YOUR_FACEBOOK_APP_ID',
@@ -104,7 +104,7 @@ In the twitter app settings tab, set the twitter app callback URL:
 In the twitter app permissions tab, check the box that says "request email
 addresses from users" and then click the update settings button
 
-edit <strong>./API/config/dev.js</strong> with your mongo credentials
+edit <strong>./API/config/dev.js</strong> with your twitter credentials
 
 ```
 twitterConsumerId: 'YOUR_CONSUMER_KEY',
@@ -112,4 +112,4 @@ twitterConsumerSecret: 'YOUR_SECRET_KEY',
 ```
 
 You can add additional passport strategies see
-[Passportjs.org](https://passportsjs.org)
+[Passportjs.org](http://www.passportjs.org)
